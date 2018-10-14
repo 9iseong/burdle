@@ -59,6 +59,51 @@
 			<artifactId>reactor-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		<!-- 
+		<dependency>
+	        <groupId>org.springframework.boot</groupId>
+	        <artifactId>spring-boot-starter-security</artifactId>
+	    </dependency>
+	     -->
+		
+		
+		<!-- 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		-->
+		 
+		<dependency>
+		    <groupId>io.springfox</groupId>
+		    <artifactId>springfox-swagger2</artifactId>
+		    <version>3.0.0-SNAPSHOT</version>
+		</dependency>	
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>3.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-spring-webflux</artifactId>
+            <version>3.0.0-SNAPSHOT</version>
+        </dependency>
+        
+        <!-- 
+		<dependency>
+		    <groupId>io.springfox</groupId>
+		    <artifactId>springfox-swagger2</artifactId>
+		    <version>2.9.2</version>
+		</dependency>	
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+		 -->
+
 	</dependencies>
 
 	<build>
@@ -87,7 +132,16 @@
 				<enabled>false</enabled>
 			</snapshots>
 		</repository>
+		
+		
+		<!-- swagger 3.0.0 repository -->
+	    <repository>
+	      <id>jcenter-snapshots</id>
+	      <name>jcenter</name>
+	      <url>http://oss.jfrog.org/artifactory/oss-snapshot-local/</url>
+	    </repository>
 	</repositories>
+	
 
 	<pluginRepositories>
 		<pluginRepository>
